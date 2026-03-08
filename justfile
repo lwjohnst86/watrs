@@ -4,6 +4,15 @@
 # Build the full package, including any checks and documentation.
 run-all: format check test build
 
+# Install the pre-commit hooks
+install-precommit:
+    # Install pre-commit hooks
+    uvx pre-commit install
+    # Run pre-commit hooks on all files
+    uvx pre-commit run --all-files
+    # Update versions of pre-commit hooks
+    uvx pre-commit autoupdate
+
 # Build the book and serve it.
 serve-book:
   # Install via `cargo install mdbook`
