@@ -10,12 +10,18 @@ serve-book:
   mdbook serve --open
 
 # Run all checks.
-check: check-spelling check-fmt check-cargo check-clippy
+check: check-spelling check-urls check-fmt check-cargo check-clippy
 
 # Run linters and checkers.
 check-spelling:
   # Install via `cargo install typos`
   typos
+
+# Check that URLs work
+check-urls:
+    lychee . \
+      --verbose \
+      --extensions md
 
 # Checks with clippy.
 check-clippy:
