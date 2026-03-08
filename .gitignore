@@ -1,3 +1,31 @@
-/target/
+
+# Development files and folders
+_ignore
+bin/
+dev/
+_temp/
+
+# Temporary files
+*.tmp
+
+# Any IDE specific folders
+.idea
+
+# MacOS
+.DS_Store
+
+# mdbook
 *.html
-/book/
+book/
+
+# Website generation
+_site
+_book
+public
+site
+
+# Rust-specific
+target/
+debug
+**/*.rs.bk
+*.pdb
