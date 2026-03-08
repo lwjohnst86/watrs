@@ -5,7 +5,7 @@
 run-all: format check test build
 
 # Build the book and serve it.
-serve-book: 
+serve-book:
   # Install via `cargo install mdbook`
   mdbook serve --open
 
@@ -33,7 +33,7 @@ check-clippy:
 # Checks with cargo.
 check-cargo:
   cargo check
-  
+
 # Checks with rustfmt.
 check-fmt:
   cargo fmt --check
@@ -69,7 +69,7 @@ build-package:
 # Run the tests in the `src/` or `tests/` directories.
 test-src:
   cargo test
-  
+
 # Run tests on or in the documentation.
 test-docs:
   mdbook test
