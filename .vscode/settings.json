@@ -1,6 +1,26 @@
 {
+  "files.autoSave": "onFocusChange",
+  "editor.tabCompletion": "on",
+  "editor.snippetSuggestions": "inline",
+  "git.autofetch": false,
+  "editor.wordWrap": "off",
   "editor.formatOnSave": true,
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
-  }
+  },
+  "conventional-branch.type": [
+    "build",
+    "ci",
+    "docs",
+    "feat",
+    "fix",
+    "refactor",
+    "style",
+    "test",
+    "chore",
+    "revert",
+    "perf"
+  ],
+  "conventional-branch.format": "{Type}/{Branch}",
+  "files.insertFinalNewline": true
 }
