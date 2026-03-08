@@ -32,11 +32,18 @@ check-cargo:
 check-fmt:
   cargo fmt --check
 
+# Run formatters
+format: format-rs format-md
+
 # Format the code and fix issues.
-format:
+format-rs:
   cargo fix
   cargo clippy --fix
   cargo fmt
+
+# Format Markdown files
+format-md:
+  uvx rumdl fmt .
 
 # Run tests and check the documentation.
 test: test-src test-docs
